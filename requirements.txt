@@ -1,0 +1,6 @@
+flask
+flask-smorest
+flask-sqlalchemy
+flask_migrate
+gunicorn
+requests
