@@ -10,7 +10,7 @@ from Models import SummaryModel
 blp = Blueprint("AI", __name__, description="operation on AI conversions database")
 
 @blp.route("/ai/<int:ticket_id>")
-class get_ai_response(MethodView):
+class GetAIResponse(MethodView):
     @blp.response(200, OutputSchema)
     def get(self, ticket_id):
         response = SummaryModel.query.get_or_404(ticket_id)
